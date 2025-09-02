@@ -4,7 +4,7 @@ set -ouex pipefail
 
 ### Install packages
 
-dnf -y install \
+dnf -y install --setopt=install_weak_deps=False \
     cockpit-machines \
     cockpit-ostree \
     cockpit-sosreport \
