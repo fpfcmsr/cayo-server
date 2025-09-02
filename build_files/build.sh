@@ -4,7 +4,7 @@ set -ouex pipefail
 
 ### Install packages
 
-dnf5 -y install \
+dnf -y install \
     cockpit-machines \
     cockpit-ostree \
     cockpit-sosreport \
